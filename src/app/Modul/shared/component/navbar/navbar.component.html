@@ -1,0 +1,45 @@
+<nav class="navbar bg-dark navbar-dark sticky-top w-100">
+
+  <div class="container d-sm-block d-lg-flex">
+      <ul class="navbar-nav flex-grow-1  d-flex flex-row justify-content-between">
+        <li class="nav-item text-light">
+            <h2>IQ.Test</h2>
+        </li>
+
+        <li class="nav-item d-flex align-items-center justify-content-between">
+
+          <i class="bi bi-person-fill-lock text-light" *ngIf="id==0"></i>
+          <a class="nav-link ms-2" [routerLink]="['/login']" [routerLinkActive]="'text-success fw-bold'"
+            [routerLinkActiveOptions]="{exact:true}" *ngIf="id==0" >Login</a>
+
+            <i class="bi bi-unlock-fill text-light" *ngIf="id!=0"></i>
+            <div class="text-light ps-1">{{email}}</div>
+          <a class="nav-link ms-2" [routerLink]="['']" [routerLinkActive]="'text-success fw-bold'"
+            [routerLinkActiveOptions]="{exact:true}" (click)="logout()" *ngIf="id!=0">Logout</a>
+
+
+        </li>
+      </ul>
+      <ul class="navbar-nav d-flex flex-row justify-content-center mx-auto">
+        <li class="nav-item">
+          <a class="nav-link ms-sm-0 ms-md-3" [routerLink]="['/home']" [routerLinkActive]="'text-success fw-bold'"
+            [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" [routerLink]="['about']" [routerLinkActive]="'text-success fw-bold'"
+            [routerLinkActiveOptions]="{exact:true}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" [routerLink]="['topics']" [routerLinkActive]="'text-success fw-bold'"
+            [routerLinkActiveOptions]="{exact:true}">Exam</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" [routerLink]="['contact']" [routerLinkActive]="'text-success fw-bold'"
+            [routerLinkActiveOptions]="{exact:true}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  
+  
+  </nav>
+  

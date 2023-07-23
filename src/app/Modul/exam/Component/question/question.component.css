@@ -1,0 +1,18 @@
+.eachOption:hover{
+    background-color: #e3e8ec;
+}
+input:checked {
+background-color:#834ffe;
+border-color: #834ffe;
+}
+
+progress {
+    border: none;
+    height: 0.5rem;
+  }
+  progress::-webkit-progress-value {
+    background: rgb(36, 168, 24);
+  }
+  progress::-webkit-progress-bar {
+    background: rgb(209, 209, 211);
+  }

@@ -1,0 +1,69 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#topic {
+    background: #eee !important;
+}
+
+/* body{margin-top:20px;} */
+
+.card {
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+}
+
+
+.card[data-background="color"] .content a {
+    color: #007b5e;
+}
+.card.card-just-text .content {
+    
+    text-align: center;
+}
+.card .content {
+    padding: 10px 20px;
+}
+.card-big-shadow {
+    box-shadow: -6px 4px 9px 5px rgb(151 151 151 / 50%);
+    border-radius: 10px;
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content-card{
+    margin-top:30px;    
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*======== COLORS ===========*/
+.card[data-color="yellow"] {
+    background: rgb(255, 255, 255);
+}
+.card[data-color="yellow"] .description {
+    color: black;
+}
+
+.section-title{
+    text-align: center;
+    color: #007b5e;
+    text-transform: uppercase;
+}
+/* 
+.button {
+    position: relative;
+}
+.button a{
+    position: absolute;
+    bottom: -10 px;
+    right: 70px;
+} */

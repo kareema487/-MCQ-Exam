@@ -1,0 +1,74 @@
+<div class="container justify-content-center">
+  <div class="row text-center mt-4 mb-3">
+    <h1 class="fw-bold text-success">
+      Summary Of {{ topic?.name }} Quiz
+    </h1>
+  </div>
+
+  <div class="row fs-4 border-bottom pb-2">
+    <div class="col-sm-12 col-md-6 col-lg-4 text-lg-center">
+      Total correct Answers :
+      <span class="fw-bold text-success" [class.text-danger]="correctAnswers*2<totalQuestions">{{
+        correctAnswers + "/" + totalQuestions
+      }}</span>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4 text-lg-center">
+      Your Score :
+      <span class="fw-bold  p-2 text-success" [class.text-danger]="correctAnswers*2<totalQuestions">{{
+        ((correctAnswers / totalQuestions) * 100).toFixed(2) + "%"
+      }}</span>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 text-lg-center">
+      Time Spend :
+      <span class="text-danger fw-bold ">
+        <span *ngIf="finalMinSpent < 10">0</span>{{ finalMinSpent }} :
+        <span *ngIf="finalSecSpent < 10">0</span>{{ finalSecSpent }}
+      </span>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-sm-12 col md-8 col-lg-6 mx-auto pt-2">
+
+ 
+  <table class="table table-hover my-4">
+    <thead>
+      <tr>
+    
+        <th scope="col"><span class="py-1 px-3 mr-2 me-2 bg-dark-subtle"></span> </th>
+        <th scope="col">Total Questions</th>
+        <th scope="col">{{ totalQuestions }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+        <td><span class="py-1 px-3  bg-warning" ></span></td>
+        <td>Attempted Questions</td>
+        <td class="text-warning">{{ attemptedQuestions }}</td>
+      </tr>
+      <tr>
+        <td><span class="py-1 px-3  bg-success" ></span></td>
+        <td>Correct Answers</td>
+        <td class="text-success">{{ correctAnswers }}</td>
+      </tr>
+      <tr>
+        <td><span class="py-1 px-3  bg-danger" ></span></td>
+        <td>Incorrect Answers</td>
+        <td class="text-danger">{{ incorrectAnswers }}</td>
+      </tr>
+      <tr>
+        <td><span class="py-1 px-3 " style="background-color: #fd9644;"></span></td>
+        <td>Unattempted Questions</td>
+        <td  style="color: #fd9644;">{{ unattemptedQuestions }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+  <div class="d-flex justify-content-center">
+    <a [routerLink]="['/home']" class="btn btn-success rounded-3 mb-5 px-4">Finish</a>
+  </div>
+
+</div>

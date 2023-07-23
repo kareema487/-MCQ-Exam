@@ -1,0 +1,63 @@
+
+
+<div class="container">
+    <div class="row justify-content-center ">
+      <div class="text-center mt-5 mb-3">
+        <h1 class="fw-bold text-success">
+          Instructions for the IQ Test
+        </h1>
+      </div>
+<div class="mb-3">
+      <table class="table table-striped table-hover table-bordered text-center">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col" >Duration</th>
+            <th scope="col">No. of Question</th>
+            <th scope="col">Pass Exam</th>
+
+          </tr>
+          <tr>
+       
+          <th scope="col">{{topic?.name}}</th>
+          <th scope="col">{{topic?.durationExam}} minutes</th>
+          <th scope="col">{{exam?.question.length}}</th>
+          <th scope="col">50 %</th>
+        </tr>
+        </thead>
+      </table>
+    </div>
+      <div class="">
+        <ul class="list-group list-group-flush list-unstyled">
+      <li class="list-item">
+        <i class="bi bi-check2-all me-2"></i>
+        You can choose your question by using the 
+        <span class="fw-bold">Next</span> and
+        <span class="fw-bold">Previous</span> 
+        buttons.
+      </li>
+            
+      <li class="list-item" >
+        <i class="bi bi-check2-all me-2"></i>
+        You can end the exam at any time by clicking the 
+        <span class="fw-bold">
+          End Exam
+        </span> 
+        button.
+      </li>
+      <li class="list-item">
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" [(ngModel)]="isChecked" id="readyCheckbox" (change)="testCheck()">
+          <label class="form-check-label text-primary" for="readyCheckbox">Are you ready?</label>
+        </div>
+      </li>
+
+        <small class="text-danger ps-2 mb-0" [class.opacity-0]="!flag">You must check the box above before starting the exam.</small>
+
+      <li class="list-group-item">
+        <button class="btn btn-success m-auto d-block mb-5" (click)="takeExam()">Start Exam</button>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>

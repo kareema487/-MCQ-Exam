@@ -1,0 +1,10 @@
+.text-shadow{
+    /* text-shadow: 1px 1px 11px rgb(144, 150, 137); */
+    text-shadow: 2px 2px 10px #b8b8b8;
+    font-style: italic;
+}
+
+tr{
+    font-size: large;
+    
+}

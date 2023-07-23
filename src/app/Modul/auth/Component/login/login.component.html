@@ -1,0 +1,66 @@
+
+<div class="container">
+
+    <div class="col-12 col-md-8 col-lg-5 mx-auto my-3  py-3">
+          <h1 class="text-success text-center pb-2 border-bottom mb-3">Login</h1>
+  
+          <form  [formGroup]="loginForm">
+            <div class="my-3 d-flex align-items-center">
+              <label for="sel1" class="form-label me-3">Role:</label>
+              <select class="form-select w-auto" id="sel1" formControlName="role">
+                <option value="" selected disabled>--select--</option>
+                <option value="admin">Admin</option>
+                <option value="student">Student</option>
+              </select>
+              <small  *ngIf="role.errors?.['required']&& (role.valid||role.touched)" class="text-danger">
+                role is required
+              </small>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control"  [class.is-invalid]="email.invalid&&email.touched"
+              id="email" placeholder="Enter email" formControlName="email">
+              <small *ngIf="emailError" class="text-danger">
+                The email address or role you entered isn't connected to an account
+              </small>
+              <small   *ngIf="email.errors?.['required']&& (email.valid||email.touched)" class="text-danger">
+                email is required
+              </small>
+              <small *ngIf="email.errors?.['pattern']&& (email.valid||email.touched)"  class="text-danger">
+                email must match like example@gmail.com
+              </small>
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" [class.is-invalid]="password.invalid&&password.touched"
+              id="pwd" placeholder="Enter password" formControlName="password">
+              <small *ngIf="passError" class="text-danger">
+                The password that you've entered is incorrect.
+              </small>
+              <small class="text-danger" *ngIf="password.errors?.['required']&& (password.valid||password.touched)">
+                password is required
+              </small>
+              <small class="text-danger" *ngIf="password.errors?.['pattern']&& (password.valid||password.touched)">
+                password is not valid
+              </small>
+              
+            </div>
+      
+            <div class="form-text mb-3">
+              <a routerLink="/forget-password" class="link-danger">Forgot password?</a>
+            </div>
+            <div class="mb-3">
+              <p>
+                Don't have an account?
+                <a routerLink="/register" class="link-primary fw-bold">Register</a>
+              </p>
+            </div>
+            <div class="text-center">
+              <button (click)="btnLogin($event)" class="btn btn-success border rounded-pill px-5 my-3" [disabled]="loginForm.invalid">login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+

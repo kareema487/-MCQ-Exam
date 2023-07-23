@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Mulish:wght@300&display=swap');
+
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Mulish', sans-serif; */
+
+.h-90{
+    min-height: 90vh;
+  }

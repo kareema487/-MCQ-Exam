@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row  p-5">
+    <div class="d-flex justify-content-between border-bottom mb-2 pb-3">
+      <div class="d-flex align-items-center">
+        <img src="../../../../../assets/icons/{{image}}" alt={{image}}>
+        <span class="fs-3 fw-bold ms-3 fst-italic">{{ topic?.name }}</span>
+      </div>
+      <div class="fs-5 d-flex align-items-center text-danger fw-bold">
+        <i class="bi bi-hourglass-split mx-2"></i>
+        <span *ngIf="minutes < 10">0</span>{{ minutes }} :
+        <span *ngIf="seconds < 10">0</span>{{ seconds }}
+      </div>
+    </div>
+    <div class="text-secondary my-1 d-flex justify-content-between">
+      <span>Exam Progress:</span>
+      <span>Question {{questionVal?.question[i].id }} out of {{questionVal?.question?.length}}</span>
+    </div>
+
+    <progress class="mb-4" id="file" [value]="i+1" [max]="Questions?.length"></progress>
+
+
+    <form>
+      <div *ngFor="let item of Questions; let j = index" [hidden]="j !== i" class="">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="text-secondary">
+              Question {{ questionVal?.question[i].id }}
+            </div>
+            <div class="fw-bold mb-4 mt-1">{{ questionVal?.question[i]?.qName }}</div>
+          </div>
+          <div>
+            <input type="submit" class="btn btn-outline-danger py-1 px-3" (click)="showSure()" value="End Exam" />
+          </div>
+        </div>
+        <label [for]="'option' + option.id" *ngFor="let option of this.Questions[i]?.options"
+          class="border-top form-check pt-1 eachOption">
+          <label class="form-check-label p-2">
+            <input type="radio" [name]="'choose' + i" [id]="'option' + option.id" [value]="option?.option"
+              [(ngModel)]="userAnswers[i]" class="form-check-input me-3" />
+            {{ option?.option }}
+          </label>
+        </label>
+      </div>
+
+    </form>
+    <div class="d-block my-3">
+      <button class="btn btn-success text-capitalize " style="float: left" (click)="prevQuestion()" *ngIf="i != 0">
+        <i class="bi bi-arrow-left me-2"></i> prev
+      </button>
+      <button class="btn btn-success text-right text-capitalize" style="float: right" (click)="nextQuestion()"
+        *ngIf="i != Questions?.length - 1">
+        next<i class="bi bi-arrow-right ms-2"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div *ngIf="flag" class="d-flex justify-content-center align-items-center bg-secondary bg-opacity-25"
+  style="position: fixed;top: 0;bottom: 0;right: 0; left: 0;">
+  <div class="border text-center rounded-4 bg-light" style="width: 25rem; height: 22rem;margin: auto;">
+    <div class="">
+      <div class="py-4">
+        <h1 class="modal-title"> {{topic?.name}} </h1>
+      </div>
+
+      <h6 class="display-6 py-2">Are You Sure ?</h6>
+      <p class="text-secondary py-2"> You answered {{attempted}}/{{questionVal?.question?.length}} questions </p>
+
+
+      <div class="py-4">
+        <button type="button" class="btn btn-primary me-4" (click)="endExam()">Submit Exam</button>
+        <button type="button" class="btn btn-secondary" (click)="hideSure()">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+</div>

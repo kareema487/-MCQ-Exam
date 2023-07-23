@@ -1,0 +1,1988 @@
+{
+  "users": [
+    {
+      "role": "student",
+      "email": "ali@gmail.com",
+      "gender": "male",
+      "phone": "01112345678",
+      "age": 20,
+      "securityQuestions": {
+        "firstSchoolName": "nile",
+        "childhoodNickname": "ali",
+        "motherMiddleName": "mohamed"
+      },
+      "userName": "ali mohamed",
+      "password": "QWER1234",
+      "address": {
+        "state": "cairo",
+        "city": "shobra",
+        "postalCode": "232525"
+      },
+      "image": "../../../../../assets/user.jpg",
+      "id": 1
+    },
+    {
+      "role": "admin",
+      "email": "ahmed@gmail.com",
+      "gender": "male",
+      "phone": "01122445533",
+      "age": 25,
+      "securityQuestions": {
+        "firstSchoolName": "shibin",
+        "childhoodNickname": "ahmed",
+        "motherMiddleName": "tarek"
+      },
+      "userName": "ahmed tarek",
+      "password": "Qwer123456789",
+      "address": {
+        "state": "minofia",
+        "city": "shibin",
+        "postalCode": "24586"
+      },
+      "image": "blob:http://localhost:4200/32357a4a-93ec-4d93-929c-fec46f0e2f86",
+      "id": 2
+    },
+    {
+      "role": "admin",
+      "email": "hossam@gmail.com",
+      "gender": "male",
+      "phone": "01088998874",
+      "age": 27,
+      "securityQuestions": {
+        "firstSchoolName": "shibin",
+        "childhoodNickname": "hossam",
+        "motherMiddleName": "hassan"
+      },
+      "userName": "hossam hassan",
+      "password": "Lki532222",
+      "address": {
+        "state": "menofia",
+        "city": "shibin",
+        "postalCode": "225487"
+      },
+      "image": "blob:http://localhost:4200/e6b947b4-e8a3-4d7c-bce6-59059018cb54",
+      "id": 3
+    },
+    {
+      "role": "student",
+      "email": "alaa@example.com",
+      "gender": "female",
+      "phone": "01155889966",
+      "age": 35,
+      "securityQuestions": {
+        "firstSchoolName": "Nile",
+        "childhoodNickname": "alaa",
+        "motherMiddleName": "ali"
+      },
+      "userName": "alaa ali",
+      "password": "A1245635879",
+      "address": {
+        "state": "cairo",
+        "city": "ain shams",
+        "postalCode": "3698756"
+      },
+      "image": "blob:http://localhost:4200/31b91d5c-f070-430b-bc9d-599f7e4eabbd",
+      "id": 4
+    },
+    {
+      "role": "student",
+      "email": "nour@gmail.com",
+      "gender": "male",
+      "phone": "01055555555",
+      "age": 30,
+      "securityQuestions": {
+        "firstSchoolName": "niles",
+        "childhoodNickname": "test",
+        "motherMiddleName": "test"
+      },
+      "userName": "nour ahmed",
+      "password": "Nour1234",
+      "address": {
+        "state": "cairo",
+        "city": "benha",
+        "postalCode": "125346"
+      },
+      "image": "blob:http://localhost:4200/b798616e-d224-41bc-9bb6-4e4859fa7cf1",
+      "id": 5
+    },
+    {
+      "role": "admin",
+      "email": "ibrahim@gmail.com",
+      "gender": "male",
+      "phone": "01148992295",
+      "age": 26,
+      "securityQuestions": {
+        "firstSchoolName": "roots",
+        "childhoodNickname": "ibrahim",
+        "motherMiddleName": "hassan"
+      },
+      "userName": "ibrahim hassan",
+      "password": "QWER1234",
+      "address": {
+        "state": "cairo",
+        "city": "benha",
+        "postalCode": "15315"
+      },
+      "image": "blob:http://localhost:4200/83ab4b6f-8ffe-4ee3-aa71-120304fb0101",
+      "id": 6
+    },
+    {
+      "path": "{}",
+      "id": 7
+    },
+    {
+      "path": "{}",
+      "id": 8
+    },
+    {
+      "path": {
+        "__zone_symbol__originalInstance": {}
+      },
+      "id": 9
+    },
+    {
+      "path": {
+        "__zone_symbol__originalInstance": {}
+      },
+      "id": 10
+    },
+    {
+      "path": "{\"__zone_symbol__originalInstance\":{}}",
+      "id": 11
+    },
+    {
+      "path": "{\"__zone_symbol__originalInstance\":{}}",
+      "id": 12
+    },
+    {
+      "path": "{\"__zone_symbol__originalInstance\":{}}",
+      "id": 13
+    },
+    {
+      "path": {
+        "__zone_symbol__originalInstance": {}
+      },
+      "id": 14
+    },
+    {
+      "path": {},
+      "id": 15
+    },
+    {
+      "path": "{}",
+      "id": 16
+    }
+  ],
+  "Topics": [
+    {
+      "id": 1,
+      "name": "CSS",
+      "durationExam": "20",
+      "icon": "css.png",
+      "desc": "CSS is a programming language used for styling web pages.It allows developers to separate the presentation of a webpage from its content, making it easier to maintain and update the styling of a website. "
+    },
+    {
+      "id": 2,
+      "name": "SQL",
+      "durationExam": "25",
+      "icon": "sql.png",
+      "desc": "SQL is a language for managing and manipulating databases. Key commands include SELECT (retrieve), INSERT (add), UPDATE (modify), DELETE (remove), JOIN (combine), WHERE (filter), GROUP BY (group), and ORDER BY (sort)."
+    },
+    {
+      "id": 3,
+      "name": "Angular",
+      "durationExam": "30",
+      "icon": "angular.png",
+      "desc": "Angular is an open-source web application framework developed by Google for building complex and dynamic web applications using TypeScript. It provides features such as two-way data binding."
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Eng/Cersten Fady",
+      "image": "Cersten.jpg",
+      "bref": " I'm passionate about helping students learn and develop their skills in this field, and I strive to make my classes engaging and effective.",
+      "about": "is an expert in Full-Stack development, teaches and creates educational materials.They provide effective instruction on sFull-Stack development topics, give feedback to students, and collaborate with other instructors to improve courses. They help students learn and acquire new skills in Full-Stack development."
+    },
+    {
+      "id": 2,
+      "name": "Eng/Ahmed Hosny",
+      "image": "AhmedHosny.jpg",
+      "bref": " I'm passionate about helping students learn and develop their skills in this field, and I strive to make my classes engaging and effective.",
+      "about": "is an expert in Full-Stack development, teaches and creates educational materials.They provide effective instruction on sFull-Stack development topics, give feedback to students, and collaborate with other instructors to improve courses. They help students learn and acquire new skills in Full-Stack development."
+    },
+    {
+      "id": 3,
+      "name": "Eng/Marwa Hany",
+      "image": "Marwa.jpg",
+      "bref": " I'm passionate about helping students learn and develop their skills in this field, and I strive to make my classes engaging and effective.",
+      "about": "is an expert in Full-Stack development, teaches and creates educational materials.They provide effective instruction on sFull-Stack development topics, give feedback to students, and collaborate with other instructors to improve courses. They help students learn and acquire new skills in Full-Stack development."
+    },
+    {
+      "id": 4,
+      "name": "Eng/Mohamed Deraz",
+      "image": "Mohamed.jpg",
+      "bref": " I'm passionate about helping students learn and develop their skills in this field, and I strive to make my classes engaging and effective.",
+      "about": "is an expert in Full-Stack development, teaches and creates educational materials.They provide effective instruction on sFull-Stack development topics, give feedback to students, and collaborate with other instructors to improve courses. They help students learn and acquire new skills in Full-Stack development."
+    },
+    {
+      "id": 5,
+      "name": "Eng/Fatma Mostafa",
+      "image": "Fatma.jpg",
+      "bref": " I'm passionate about helping students learn and develop their skills in this field, and I strive to make my classes engaging and effective.",
+      "about": "is an expert in Full-Stack development, teaches and creates educational materials.They provide effective instruction on sFull-Stack development topics, give feedback to students, and collaborate with other instructors to improve courses. They help students learn and acquire new skills in Full-Stack development."
+    },
+    {
+      "id": 6,
+      "name": "Eng/Haythem Labib",
+      "image": "Haythem.jpg",
+      "bref": " I'm passionate about helping students learn and develop their skills in this field, and I strive to make my classes engaging and effective.",
+      "about": "is an expert in Full-Stack development, teaches and creates educational materials.They provide effective instruction on sFull-Stack development topics, give feedback to students, and collaborate with other instructors to improve courses. They help students learn and acquire new skills in Full-Stack development."
+    }
+  ],
+  "Teams": [
+    {
+      "id": 1,
+      "position": "Project - Mangment",
+      "name": "Hossam Hassan",
+      "image": "Hossam.jpg",
+      "links": [
+        {
+          "facebook": "",
+          "twitter": "",
+          "instgram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "position": "Project - Mangment",
+      "name": "Ibrahim Hassan",
+      "image": "Ibrahim.jpg",
+      "links": [
+        {
+          "facebook": "",
+          "twitter": "",
+          "instgram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "position": "Project - Mangment",
+      "name": "Kareema Magdy",
+      "image": "Carima.jpg",
+      "links": [
+        {
+          "facebook": "",
+          "twitter": "",
+          "instgram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "position": "Project - Mangment",
+      "name": "Ahmed Tarek",
+      "image": "ahmed.webp",
+      "links": [
+        {
+          "facebook": "",
+          "twitter": "",
+          "instgram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "position": "Project - Mangment",
+      "name": "Mona Ashraf",
+      "image": "Mona.webp",
+      "links": [
+        {
+          "facebook": "",
+          "twitter": "",
+          "instgram": "",
+          "linkedin": ""
+        }
+      ]
+    }
+  ],
+  "Exams": [
+    {
+      "id": "1",
+      "question": [
+        {
+          "id": 1,
+          "qName": "What is CSS stands for?",
+          "options": [
+            {
+              "id": "A",
+              "option": "Cascading Style Sheets"
+            },
+            {
+              "id": "B",
+              "option": "Cascade Style Sheet"
+            },
+            {
+              "id": "C",
+              "option": "Color Style Sheets"
+            },
+            {
+              "id": "D",
+              "option": "Color Style Sheet"
+            }
+          ],
+          "correctAns": "Cascading Style Sheets"
+        },
+        {
+          "id": 2,
+          "qName": "What CSS describes?",
+          "options": [
+            {
+              "id": "A",
+              "option": "CSS describes how calculation perform on button click"
+            },
+            {
+              "id": "B",
+              "option": "CSS describes how HTML elements are to be displayed on screen, paper, or in other media"
+            },
+            {
+              "id": "C",
+              "option": "Both A. and B."
+            },
+            {
+              "id": "D",
+              "option": "None of the above"
+            }
+          ],
+          "correctAns": "CSS describes how HTML elements are to be displayed on screen, paper, or in other media"
+        },
+        {
+          "id": 3,
+          "qName": "What is the correct syntax for referring an external CSS?",
+          "options": [
+            {
+              "id": "A",
+              "option": "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+            },
+            {
+              "id": "B",
+              "option": "<stylesheet rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+            },
+            {
+              "id": "C",
+              "option": "<style rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+            },
+            {
+              "id": "D",
+              "option": "All of the above"
+            }
+          ],
+          "correctAns": "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+        },
+        {
+          "id": 4,
+          "qName": "What is a CSS selector?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A CSS selector is the CSS class name"
+            },
+            {
+              "id": "B",
+              "option": "A CSS selector is the set of properties that are going to be applied on HTML elements"
+            },
+            {
+              "id": "C",
+              "option": "A CSS selector is name of CSS file."
+            },
+            {
+              "id": "D",
+              "option": "A CSS selector is the first part of a CSS Rule. It may an HTML element or pattern of elements."
+            }
+          ],
+          "correctAns": "A CSS selector is the first part of a CSS Rule. It may an HTML element or pattern of elements"
+        },
+        {
+          "id": 5,
+          "qName": "In a CSS file, there is a CSS rule for paragraphs tags – what does p can be called?",
+          "options": [
+            {
+              "id": "A",
+              "option": "Selector"
+            },
+            {
+              "id": "B",
+              "option": "Attribute"
+            },
+            {
+              "id": "C",
+              "option": "Property"
+            },
+            {
+              "id": "D",
+              "option": "Tag"
+            }
+          ],
+          "correctAns": "Selector"
+        },
+        {
+          "id": 6,
+          "qName": "Inline styles are written within the _____ attribute.",
+          "options": [
+            {
+              "id": "A",
+              "option": "style"
+            },
+            {
+              "id": "B",
+              "option": "css"
+            },
+            {
+              "id": "C",
+              "option": "stylesheet"
+            },
+            {
+              "id": "D",
+              "option": "Both A. and B."
+            }
+          ],
+          "correctAns": "style"
+        },
+        {
+          "id": 7,
+          "qName": "Internal styles are written within the _____ element.",
+          "options": [
+            {
+              "id": "A",
+              "option": "<style>…</style>"
+            },
+            {
+              "id": "B",
+              "option": "<css>…</css>"
+            },
+            {
+              "id": "C",
+              "option": "<stylesheet>…</stylesheet>"
+            },
+            {
+              "id": "D",
+              "option": "Both A. and B."
+            }
+          ],
+          "correctAns": "<style>…</style>"
+        },
+        {
+          "id": 8,
+          "qName": "CSS comments are placed within the ______.",
+          "options": [
+            {
+              "id": "A",
+              "option": "//"
+            },
+            {
+              "id": "B",
+              "option": "/* and */"
+            },
+            {
+              "id": "C",
+              "option": "<* and *>"
+            },
+            {
+              "id": "D",
+              "option": "<! And !>"
+            }
+          ],
+          "correctAns": "/* and */"
+        },
+        {
+          "id": 9,
+          "qName": "Which property is used to define the text color?",
+          "options": [
+            {
+              "id": "A",
+              "option": "text-color"
+            },
+            {
+              "id": "B",
+              "option": "color"
+            },
+            {
+              "id": "C",
+              "option": "font-color"
+            },
+            {
+              "id": "D",
+              "option": "Both A. and B."
+            }
+          ],
+          "correctAns": "color"
+        },
+        {
+          "id": 10,
+          "qName": "Which property is used to define the background color?",
+          "options": [
+            {
+              "id": "A",
+              "option": "bgcolor"
+            },
+            {
+              "id": "B",
+              "option": "bg-color"
+            },
+            {
+              "id": "C",
+              "option": "background"
+            },
+            {
+              "id": "D",
+              "option": "background-color"
+            }
+          ],
+          "correctAns": "background-color"
+        },
+        {
+          "id": 11,
+          "qName": "Which CSS property is used to create a gradient background in an element?",
+          "options": [
+            {
+              "id": "A",
+              "option": "background-image"
+            },
+            {
+              "id": "B",
+              "option": "background-color"
+            },
+            {
+              "id": "C",
+              "option": "background-clip"
+            },
+            {
+              "id": "D",
+              "option": "background-size"
+            }
+          ],
+          "correctAns": "background-image"
+        },
+        {
+          "id": 12,
+          "qName": "From the given options which is/are the valid way to represent a color?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A valid color name like \"blue\""
+            },
+            {
+              "id": "B",
+              "option": "HEX code like \"#0000ff\""
+            },
+            {
+              "id": "C",
+              "option": "RGB Value like \"rgb(0,0,255)\""
+            },
+            {
+              "id": "D",
+              "option": "All of the above"
+            }
+          ],
+          "correctAns": "All of the above"
+        },
+        {
+          "id": 13,
+          "qName": "Which property is used to define the font of the element's text?",
+          "options": [
+            {
+              "id": "A",
+              "option": "font"
+            },
+            {
+              "id": "B",
+              "option": "font-family"
+            },
+            {
+              "id": "C",
+              "option": "font-style"
+            },
+            {
+              "id": "D",
+              "option": "All of the above"
+            }
+          ],
+          "correctAns": "font-family"
+        },
+        {
+          "id": 14,
+          "qName": "To make a text italic, which CSS property is used?",
+          "options": [
+            {
+              "id": "A",
+              "option": "font"
+            },
+            {
+              "id": "B",
+              "option": "font-family"
+            },
+            {
+              "id": "C",
+              "option": "font-style"
+            },
+            {
+              "id": "D",
+              "option": "All of the above"
+            }
+          ],
+          "correctAns": "font-style"
+        },
+        {
+          "id": 15,
+          "qName": "What are the valid values of font-style property?",
+          "options": [
+            {
+              "id": "A",
+              "option": "italic, bold, bolder"
+            },
+            {
+              "id": "B",
+              "option": "normal, bold, italic"
+            },
+            {
+              "id": "C",
+              "option": "underline, bold, italic"
+            },
+            {
+              "id": "D",
+              "option": "inherit, italic, normal, oblique"
+            }
+          ],
+          "correctAns": "inherit, italic, normal, oblique"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": [
+        {
+          "id": 1,
+          "qName": "What does SQL stand for?",
+          "options": [
+            {
+              "id": "A",
+              "option": "Structured Query Language"
+            },
+            {
+              "id": "B",
+              "option": "Simple Query Language"
+            },
+            {
+              "id": "C",
+              "option": "Sequential Query Language"
+            },
+            {
+              "id": "D",
+              "option": "None of the above"
+            }
+          ],
+          "correctAns": "Structured Query Language"
+        },
+        {
+          "id": 2,
+          "qName": "Which SQL keyword is used to retrieve data from a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "SELECT"
+            },
+            {
+              "id": "B",
+              "option": "FROM"
+            },
+            {
+              "id": "C",
+              "option": "WHERE"
+            },
+            {
+              "id": "D",
+              "option": "JOIN"
+            }
+          ],
+          "correctAns": "SELECT"
+        },
+        {
+          "id": 3,
+          "qName": "What is the result of the following SQL query: SELECT COUNT(*) FROM Customers;",
+          "options": [
+            {
+              "id": "A",
+              "option": "The total number of customers in the Customers table"
+            },
+            {
+              "id": "B",
+              "option": "The number of customers with a specific ID"
+            },
+            {
+              "id": "C",
+              "option": "The number of customers with a specific name"
+            },
+            {
+              "id": "D",
+              "option": "None of the above"
+            }
+          ],
+          "correctAns": "The total number of customers in the Customers table"
+        },
+        {
+          "id": 4,
+          "qName": "Which SQL data type is used for storing text values?",
+          "options": [
+            {
+              "id": "A",
+              "option": "INT"
+            },
+            {
+              "id": "B",
+              "option": "VARCHAR"
+            },
+            {
+              "id": "C",
+              "option": "BOOLEAN"
+            },
+            {
+              "id": "D",
+              "option": "FLOAT"
+            }
+          ],
+          "correctAns": "VARCHAR"
+        },
+        {
+          "id": 5,
+          "qName": "Which SQL keyword is used to add data to a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "INSERT"
+            },
+            {
+              "id": "B",
+              "option": "UPDATE"
+            },
+            {
+              "id": "C",
+              "option": "DELETE"
+            },
+            {
+              "id": "D",
+              "option": "SELECT"
+            }
+          ],
+          "correctAns": "INSERT"
+        },
+        {
+          "id": 6,
+          "qName": "Which SQL keyword is used to remove data from a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "DELETE"
+            },
+            {
+              "id": "B",
+              "option": "REMOVE"
+            },
+            {
+              "id": "C",
+              "option": "DROP"
+            },
+            {
+              "id": "D",
+              "option": "ERASE"
+            }
+          ],
+          "correctAns": "DELETE"
+        },
+        {
+          "id": 7,
+          "qName": "Which SQL keyword is used to update data in a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "UPDATE"
+            },
+            {
+              "id": "B",
+              "option": "MODIFY"
+            },
+            {
+              "id": "C",
+              "option": "CHANGE"
+            },
+            {
+              "id": "D",
+              "option": "ALTER"
+            }
+          ],
+          "correctAns": "UPDATE"
+        },
+        {
+          "id": 8,
+          "qName": "Which SQL keyword is used to order data in a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "ORDER"
+            },
+            {
+              "id": "B",
+              "option": "SORT"
+            },
+            {
+              "id": "C",
+              "option": "GROUP"
+            },
+            {
+              "id": "D",
+              "option": "ARRANGE"
+            }
+          ],
+          "correctAns": "ORDER"
+        },
+        {
+          "id": 9,
+          "qName": "Which SQL keyword is used to group data in a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "GROUP BY"
+            },
+            {
+              "id": "B",
+              "option": "SORT BY"
+            },
+            {
+              "id": "C",
+              "option": "ORDER BY"
+            },
+            {
+              "id": "D",
+              "option": "GROUP"
+            }
+          ],
+          "correctAns": "GROUP BY"
+        },
+        {
+          "id": 10,
+          "qName": "Which SQL keyword is used to join two or more tables?",
+          "options": [
+            {
+              "id": "A",
+              "option": "JOIN"
+            },
+            {
+              "id": "B",
+              "option": "MERGE"
+            },
+            {
+              "id": "C",
+              "option": "COMBINE"
+            },
+            {
+              "id": "D",
+              "option": "UNION"
+            }
+          ],
+          "correctAns": "JOIN"
+        },
+        {
+          "id": 11,
+          "qName": "What is the result of the following SQL query: SELECT AVG(Price) FROM Products;",
+          "options": [
+            {
+              "id": "A",
+              "option": "The average price of all products in the Products table"
+            },
+            {
+              "id": "B",
+              "option": "The total price of all products in the Products table"
+            },
+            {
+              "id": "C",
+              "option": "The minimum price of all products in the Products table"
+            },
+            {
+              "id": "D",
+              "option": "None of the above"
+            }
+          ],
+          "correctAns": "The average price of all products in the Products table"
+        },
+        {
+          "id": 12,
+          "qName": "Which SQL keyword is used to limit the number of results returned in a query?",
+          "options": [
+            {
+              "id": "A",
+              "option": "LIMIT"
+            },
+            {
+              "id": "B",
+              "option": "TOP"
+            },
+            {
+              "id": "C",
+              "option": "SELECT"
+            },
+            {
+              "id": "D",
+              "option": "WHERE"
+            }
+          ],
+          "correctAns": "LIMIT"
+        },
+        {
+          "id": 13,
+          "qName": "Which SQL function can be used to return the current date and time?",
+          "options": [
+            {
+              "id": "A",
+              "option": "NOW()"
+            },
+            {
+              "id": "B",
+              "option": "CURDATE()"
+            },
+            {
+              "id": "C",
+              "option": "CURTIME()"
+            },
+            {
+              "id": "D",
+              "option": "DATE()"
+            }
+          ],
+          "correctAns": "NOW()"
+        },
+        {
+          "id": 14,
+          "qName": "Which SQL keyword is used to create a new table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "CREATE"
+            },
+            {
+              "id": "B",
+              "option": "MAKE"
+            },
+            {
+              "id": "C",
+              "option": "BUILD"
+            },
+            {
+              "id": "D",
+              "option": "GENERATE"
+            }
+          ],
+          "correctAns": "CREATE"
+        },
+        {
+          "id": 15,
+          "qName": "Which SQL data type is used for storing date and time values?",
+          "options": [
+            {
+              "id": "A",
+              "option": "DATETIME"
+            },
+            {
+              "id": "B",
+              "option": "DATE"
+            },
+            {
+              "id": "C",
+              "option": "TIME"
+            },
+            {
+              "id": "D",
+              "option": "TIMESTAMP"
+            }
+          ],
+          "correctAns": "DATETIME"
+        },
+        {
+          "id": 16,
+          "qName": "Which SQL keyword is used to delete a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "DROP"
+            },
+            {
+              "id": "B",
+              "option": "REMOVE"
+            },
+            {
+              "id": "C",
+              "option": "DELETE"
+            },
+            {
+              "id": "D",
+              "option": "ERASE"
+            }
+          ],
+          "correctAns": "DROP"
+        },
+        {
+          "id": 17,
+          "qName": "Which SQL keyword is used to add a new column to a table?",
+          "options": [
+            {
+              "id": "A",
+              "option": "ADD"
+            },
+            {
+              "id": "B",
+              "option": "INSERT"
+            },
+            {
+              "id": "C",
+              "option": "CREATE"
+            },
+            {
+              "id": "D",
+              "option": "ALTER"
+            }
+          ],
+          "correctAns": "ALTER"
+        },
+        {
+          "id": 18,
+          "qName": "Which SQL operator is used to combine multiple conditions in a WHERE clause?",
+          "options": [
+            {
+              "id": "A",
+              "option": "AND"
+            },
+            {
+              "id": "B",
+              "option": "OR"
+            },
+            {
+              "id": "C",
+              "option": "NOT"
+            },
+            {
+              "id": "D",
+              "option": "XOR"
+            }
+          ],
+          "correctAns": "AND"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": [
+        {
+          "id": 1,
+          "qName": "What is Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A front-end framework"
+            },
+            {
+              "id": "B",
+              "option": "A back-end framework"
+            },
+            {
+              "id": "C",
+              "option": "A database management system"
+            },
+            {
+              "id": "D",
+              "option": "A programming language"
+            }
+          ],
+          "correctAns": "A front-end framework"
+        },
+        {
+          "id": 2,
+          "qName": "What is the difference between AngularJS and Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "They are the same thing"
+            },
+            {
+              "id": "B",
+              "option": "AngularJS is a previous version of Angular"
+            },
+            {
+              "id": "C",
+              "option": "Angular is a previous version of AngularJS"
+            },
+            {
+              "id": "D",
+              "option": "AngularJS is a back-end framework"
+            }
+          ],
+          "correctAns": "AngularJS is a previous version of Angular"
+        },
+        {
+          "id": 3,
+          "qName": "What is TypeScript and why is it used in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A programming language used to write Angular applications"
+            },
+            {
+              "id": "B",
+              "option": "A database management system"
+            },
+            {
+              "id": "C",
+              "option": "A front-end development tool"
+            },
+            {
+              "id": "D",
+              "option": "A back-end development tool"
+            }
+          ],
+          "correctAns": "A programming language used to write Angular applications"
+        },
+        {
+          "id": 4,
+          "qName": "What is a component in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A module that provides a set of services"
+            },
+            {
+              "id": "B",
+              "option": "A module that contains other modules"
+            },
+            {
+              "id": "C",
+              "option": "A user interface element that controls a portion of the screen"
+            },
+            {
+              "id": "D",
+              "option": "A user interface element that displays data"
+            }
+          ],
+          "correctAns": "A user interface element that controls a portion of the screen"
+        },
+        {
+          "id": 5,
+          "qName": "What is a directive in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A module that provides a set of services"
+            },
+            {
+              "id": "B",
+              "option": "A module that contains other modules"
+            },
+            {
+              "id": "C",
+              "option": "A user interface element that controls a portion of the screen"
+            },
+            {
+              "id": "D",
+              "option": "A special attribute that tells Angular to do something with a DOM element"
+            }
+          ],
+          "correctAns": "A special attribute that tells Angular to do something with a DOM element"
+        },
+        {
+          "id": 6,
+          "qName": "What is a service in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A module that provides a set of services"
+            },
+            {
+              "id": "B",
+              "option": "A module that contains other modules"
+            },
+            {
+              "id": "C",
+              "option": "A user interface element that controls a portion of the screen"
+            },
+            {
+              "id": "D",
+              "option": "A user interface element that displays data"
+            }
+          ],
+          "correctAns": "A module that provides a set of services"
+        },
+        {
+          "id": 7,
+          "qName": "What is a module in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A module that provides a set of services"
+            },
+            {
+              "id": "B",
+              "option": "A module that contains other modules"
+            },
+            {
+              "id": "C",
+              "option": "A user interface element that controls a portion of the screen"
+            },
+            {
+              "id": "D",
+              "option": "A user interface element that displays data"
+            }
+          ],
+          "correctAns": "A module that contains other modules"
+        },
+        {
+          "id": 8,
+          "qName": "What is data binding in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A way to bind data to a DOM element"
+            },
+            {
+              "id": "B",
+              "option": "A way to bind data to a database"
+            },
+            {
+              "id": "C",
+              "option": "A way to bind data to a server"
+            },
+            {
+              "id": "D",
+              "option": "A way to bind data to a back-end API"
+            }
+          ],
+          "correctAns": "A way to bind data to a DOM element"
+        },
+        {
+          "id": 9,
+          "qName": "What is the difference between one-way and two-way data binding in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "One-way data binding updates the view based on changes in the component, while two-way data binding updates both the view and the component based on changes in either one"
+            },
+            {
+              "id": "B",
+              "option": "One-way data binding updates the component based on changes in the view, while two-way data binding updates the view based on changes in the component"
+            },
+            {
+              "id": "C",
+              "option": "One-way data binding is used for displayingdata, while two-way data binding is used for input fields"
+            },
+            {
+              "id": "D",
+              "option": "There is no difference between one-way and two-way data binding"
+            }
+          ],
+          "correctAns": "One-way data binding updates the view based on changes in the component, while two-way data binding updates both the view and the component based on changes in either one"
+        },
+        {
+          "id": 10,
+          "qName": "What is dependency injection in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A way to inject services into components"
+            },
+            {
+              "id": "B",
+              "option": "A way to inject components into services"
+            },
+            {
+              "id": "C",
+              "option": "A way to inject modules into components"
+            },
+            {
+              "id": "D",
+              "option": "A way to inject components into modules"
+            }
+          ],
+          "correctAns": "A way to inject services into components"
+        },
+        {
+          "id": 11,
+          "qName": "What is the purpose of the ngOnInit() method in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To initialize the component after Angular has initialized it"
+            },
+            {
+              "id": "B",
+              "option": "To handle HTTP requests"
+            },
+            {
+              "id": "C",
+              "option": "To update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "To handle user input events"
+            }
+          ],
+          "correctAns": "To initialize the component after Angular has initialized it"
+        },
+        {
+          "id": 12,
+          "qName": "What is the purpose of the ngFor directive in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To display a list of items in the view"
+            },
+            {
+              "id": "B",
+              "option": "To handle HTTP requests"
+            },
+            {
+              "id": "C",
+              "option": "To update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "To handle user input events"
+            }
+          ],
+          "correctAns": "To display a list of items in the view"
+        },
+        {
+          "id": 13,
+          "qName": "What is the purpose of the ngIf directive in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To conditionally display elements in the view"
+            },
+            {
+              "id": "B",
+              "option": "To handle HTTP requests"
+            },
+            {
+              "id": "C",
+              "option": "To update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "To handle user input events"
+            }
+          ],
+          "correctAns": "To conditionally display elements in the view"
+        },
+        {
+          "id": 14,
+          "qName": "What is the purpose of the router in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To navigate between different views in the application"
+            },
+            {
+              "id": "B",
+              "option": "To handle HTTP requests"
+            },
+            {
+              "id": "C",
+              "option": "To update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "To handle user input events"
+            }
+          ],
+          "correctAns": "To navigate between different views in the application"
+        },
+        {
+          "id": 15,
+          "qName": "What is the purpose of the HttpClient module in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To make HTTP requests to a server"
+            },
+            {
+              "id": "B",
+              "option": "To handle user input events"
+            },
+            {
+              "id": "C",
+              "option": "To update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "To display a list of items in the view"
+            }
+          ],
+          "correctAns": "To make HTTP requests to a server"
+        },
+        {
+          "id": 16,
+          "qName": "What is the purpose of the ngOnChanges() method in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To detect changes to input properties in a component"
+            },
+            {
+              "id": "B",
+              "option": "To handle HTTP requests"
+            },
+            {
+              "id": "C",
+              "option": "To update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "To handle user input events"
+            }
+          ],
+          "correctAns": "To detect changes to input properties in a component"
+        },
+        {
+          "id": 17,
+          "qName": "What is an Angular pipe?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A way to transform data in the view before displaying it"
+            },
+            {
+              "id": "B",
+              "option": "A way to handle HTTP requests"
+            },
+            {
+              "id": "C",
+              "option": "A way to update the view when data changes"
+            },
+            {
+              "id": "D",
+              "option": "A way to handle user input events"
+            }
+          ],
+          "correctAns": "A way to transform data in the view before displaying it"
+        },
+        {
+          "id": 18,
+          "qName": "What is the purpose of the ngModel directive in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "To bind data to a DOM element"
+            },
+            {
+              "id": "B",
+              "option": "To conditionally display elements in the view"
+            },
+            {
+              "id": "C",
+              "option": "To handle user input events"
+            },
+            {
+              "id": "D",
+              "option": "To transform data in the view before displaying it"
+            }
+          ],
+          "correctAns": "To bind data to a DOM element"
+        },
+        {
+          "id": 19,
+          "qName": "What is the difference between a reactive and a template-driven form in Angular?",
+          "options": [
+            {
+              "id": "A",
+              "option": "Reactive forms use the FormsModule, while template-driven forms use the ReactiveFormsModule"
+            },
+            {
+              "id": "B",
+              "option": "Reactive forms require more code to set up than template-driven forms"
+            },
+            {
+              "id": "C",
+              "option": "Reactive forms provide more flexibility and control than template-driven forms"
+            },
+            {
+              "id": "D",
+              "option": "There is no difference between reactive and template-driven forms"
+            }
+          ],
+          "correctAns": "Reactive forms provide more flexibility and control than template-driven forms"
+        },
+        {
+          "id": 20,
+          "qName": "What is Angular Material?",
+          "options": [
+            {
+              "id": "A",
+              "option": "A set of UI components that follow the Material Design guidelines"
+            },
+            {
+              "id": "B",
+              "option": "A back-end framework for building web applications"
+            },
+            {
+              "id": "C",
+              "option": "A database management system"
+            },
+            {
+              "id": "D",
+              "option": "An alternative to AngularJS for building front-end web applications"
+            }
+          ],
+          "correctAns": "A set of UI components that follow the Material Design guidelines"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "correctAnswer": "1",
+      "attempt": "8",
+      "min": "19",
+      "sec": "53",
+      "topicName": "CSS",
+      "totalQuestions": "15",
+      "id": 1
+    },
+    {
+      "correctAnswer": "2",
+      "attempt": "14",
+      "min": "19",
+      "sec": "35",
+      "topicName": "CSS",
+      "totalQuestions": "15",
+      "id": 2
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "7",
+      "min": "19",
+      "sec": "38",
+      "topicName": "CSS",
+      "totalQuestions": "15",
+      "id": 3
+    },
+    {
+      "correctAnswer": "9",
+      "attempt": "10",
+      "min": "21",
+      "sec": "50",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 4
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "48",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 5
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "7",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 6
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "37",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 7
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "40",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 8
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "56",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 9
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "56",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 10
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "56",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 11
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "57",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 12
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "57",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 13
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "56",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 14
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "57",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 15
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "57",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 16
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "55",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 17
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "29",
+      "sec": "58",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 18
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "57",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 19
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "57",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 20
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "50",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 21
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "57",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 22
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "56",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 23
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "34",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 24
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "55",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 25
+    },
+    {
+      "correctAnswer": "12",
+      "attempt": "15",
+      "min": "15",
+      "sec": "15",
+      "topicName": "CSS",
+      "totalQuestions": "15",
+      "id": 26
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "51",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 27
+    },
+    {
+      "correctAnswer": "1",
+      "attempt": "2",
+      "min": "24",
+      "sec": "34",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 28
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "1",
+      "min": "24",
+      "sec": "37",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 29
+    },
+    {
+      "correctAnswer": "1",
+      "attempt": "1",
+      "min": "29",
+      "sec": "4",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 30
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "23",
+      "sec": "27",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 31
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "6",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 32
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "3",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 33
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "2",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 34
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "2",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 35
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "23",
+      "sec": "56",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 36
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "23",
+      "sec": "56",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 37
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "23",
+      "sec": "41",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 38
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "57",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 39
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "56",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 40
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "55",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 41
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "1",
+      "min": "24",
+      "sec": "45",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 42
+    },
+    {
+      "correctAnswer": "2",
+      "attempt": "4",
+      "min": "29",
+      "sec": "34",
+      "topicName": "Angular",
+      "totalQuestions": "20",
+      "id": 43
+    },
+    {
+      "correctAnswer": "0",
+      "attempt": "0",
+      "min": "24",
+      "sec": "51",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 44
+    },
+    {
+      "correctAnswer": "1",
+      "attempt": "1",
+      "min": "24",
+      "sec": "55",
+      "topicName": "SQL",
+      "totalQuestions": "18",
+      "id": 45
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "name": "hossam",
+      "email": "hossam@gmail.com",
+      "phone": "01055555555",
+      "message": "nice website"
+    },
+    {
+      "name": "Ibrahim",
+      "email": "ibrahim@gmail.com",
+      "phone": "01148992295",
+      "message": "well done",
+      "id": 2
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "phone": "01112345678",
+      "message": "great website",
+      "id": 3
+    },
+    {
+      "name": "ahmed ali",
+      "email": "ahmed20@gmail.com",
+      "phone": "01144445688",
+      "message": "congratulations",
+      "id": 4
+    }
+  ]
+}

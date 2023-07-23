@@ -1,0 +1,52 @@
+<div class="d-flex flex-column h-100 bg-dark">
+
+    <!-- FOOTER -->
+    <footer class="py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 ">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="h1 text-white">IQ.</h5>
+                    <p class="small text-light">We are a programming courses company that offers high-quality
+                        education</p>
+                    <p class="small text-light mb-0">&copy; Copyrights. All rights reserved. <a class="text-success"
+                            href="#">Exams.com</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled text-muted">
+                                <caption class="text-light fw-bolder">Home</caption>
+                                <li><a routerLink="/home" [fragment]="'topic'" class="link-success">Topic</a></li>
+                                <li><a routerLink="/home" [fragment]="'instructor'" class="link-success">Instructor</a></li>
+                                <li><a routerLink="/contact"  class="link-success">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col 6">
+                            <ul class="list-unstyled">
+                                <caption class="text-light fw-bolder">About</caption>
+
+                                <li><a routerLink="/about" [fragment]="'vision'" class="link-success">Our Vision</a></li>
+                                <li><a routerLink="/about" [fragment]="'team'" class="link-success">Team Page</a></li>
+                                <li><a routerLink="/about" [fragment]="'location'" class="link-success">Our Location</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-light">Our experienced instructors provide hands-on learning
+                        and real-world applications</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button">
+                                <i class="bi bi-envelope-paper"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

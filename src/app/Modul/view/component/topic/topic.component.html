@@ -1,0 +1,25 @@
+<section id="topic" class="py-5">
+    <div class="container bootstrap snippets bootdeys ">
+        <h1 class="text-success text-center fw-bold mb-3 text-decoration-underline ">OUR TOPIC</h1>
+        <div class="row">
+            <div *ngFor="let topic of Topics" class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow ">
+                    <div class="card card-just-text py-4 px-2" data-background="color" data-color="yellow" data-radius="none">
+                        <div class="content d-flex justify-content-between flex-column h-100">
+                            <h3 class="title mb-3"><a href="#">{{topic.name}}</a></h3>
+                            <p class="text-muted">{{topic.desc}}</p>
+                            <div class="button">
+                                <a class="btn btn-success text-light  rounded-3" routerLink="/topics/{{topic.id}}">
+                                    Go To Exam 
+                                </a>    
+                            </div>
+                             
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

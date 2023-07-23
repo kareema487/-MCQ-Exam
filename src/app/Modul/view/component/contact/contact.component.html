@@ -1,0 +1,55 @@
+<div class="container col-lg-5 col-sm-12 col-md-8 mb-5 ">
+    <h1 class="text-success mt-3 text-center ">Need some help?</h1>
+    <label class="form-label text-muted d-block text-center">Please fill out the form below to send a comment or question </label>
+
+    <form [formGroup]="contact" class="">
+
+        <div class="my-3"> 
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name...." formControlName="name"
+            [class.is-invalid]="name.invalid&&name.touched">
+          <small *ngIf="name.errors?.['required']&& (name.valid||name.touched)" class="text-danger">
+            required
+          </small>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email"
+            [class.is-invalid]="email.invalid&&email.touched">
+          <small *ngIf="email.errors?.['required']&& (email.valid||email.touched)" class="text-danger">
+            required
+          </small>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone:</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter Your Phone Number..." formControlName="phone"
+            [class.is-invalid]="phone.invalid&&phone.touched">
+          <small *ngIf="phone.errors?.['required']&& (phone.valid||phone.touched)" class="text-danger">
+            required
+          </small>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Messages:</label>
+            <textarea class="form-control" rows="5" id="message" placeholder="Write Your Message Here..."
+            formControlName="message" [class.is-invalid]="message.invalid&&message.touched">
+            </textarea>
+           
+          <small *ngIf="message.errors?.['required']&& (message.valid||message.touched)" class="text-danger">
+            required
+          </small>
+        </div>
+       
+
+       <div class="text-center">
+        <button class="btn btn-success w-25 mt-3"
+        (click)="send()" [disabled]="contact.invalid">
+        Send
+        </button>
+       </div>
+    </form>
+</div>
+
+
+

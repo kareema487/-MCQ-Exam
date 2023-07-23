@@ -1,0 +1,200 @@
+<div>
+  <div class="container">
+    
+    <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+      <h2 class="text-success mt-4 text-center fw-bold border-bottom pb-2">Register</h2>
+
+      <form [formGroup]="registerForm">
+    
+
+            <div class="my-3 d-flex align-items-center">
+              <label for="sel1" class="form-label me-3">Role:</label>
+              <select class="form-select w-auto" id="sel1" formControlName="role">
+                <option value="" selected disabled>--select--</option>
+                <option value="admin">Admin</option>
+                <option value="student">Student</option>
+              </select>
+            </div>
+            <small *ngIf="role.errors?.['required']&& (role.valid||role.touched)" class="text-danger w-100">role is
+              required</small>
+
+            <!-- userName -->
+            <div class="mb-3">
+              <label for="userName" class="form-label">User Name:</label>
+              <input type="text" class="form-control" id="userName" placeholder="Enter your Name"
+                formControlName="userName" [class.is-invalid]="userName.invalid&&userName.touched">
+              <small *ngIf="userName.errors?.['required']&& (userName.valid||userName.touched)"
+                class="text-danger">userName is required</small>
+              <small *ngIf="userName.errors?.['pattern']&& (userName.valid||userName.touched)"
+                class="text-danger">userName contains two word like 'first second'</small>
+            </div>
+
+            <!-- email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control"  [class.is-invalid]="email.invalid&&email.touched"
+              id="email" placeholder="Enter email" formControlName="email">
+              <small   *ngIf="email.errors?.['required']&& (email.valid||email.touched)" class="text-danger">
+                email is required
+              </small>
+              <small *ngIf="email.errors?.['pattern']&& (email.valid||email.touched)"  class="text-danger">
+                email must match like example@gmail.com
+              </small>
+            </div>
+
+            <!-- password -->
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                formControlName="password" [class.is-invalid]="password.invalid&&password.touched">
+              <small *ngIf="password.errors?.['required']&& (password.valid||password.touched)"
+                class="text-danger">password is required</small>
+              <small *ngIf="password.errors?.['pattern']&& (password.valid||password.touched)"
+                class="text-danger">password must start with capital letter and length is more than or equal 8
+                letter</small>
+            </div>
+
+            <!-- address -->
+            <div class="d-flex flex-sm-wrap flex-lg-nowrap gap-3 mb-3" formGroupName="address">
+
+              <!-- state -->
+              <div class="">
+                <label for="state" class="form-label">State :</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter State" formControlName="state"
+                  [class.is-invalid]="state.invalid&&state.touched">
+                <small *ngIf="state.errors?.['required']&& (state.valid||state.touched)" class="text-danger">
+                  state is required
+                </small>
+                <small *ngIf="state.errors?.['pattern']&& (state.valid||state.touched)" class="text-danger">
+                  state length greater than 3 letter
+                </small>
+
+              </div>
+
+              <!-- city -->
+              <div class="">
+                <label for="city" class="form-label">City :</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter City" formControlName="city"
+                  [class.is-invalid]="city.invalid&&city.touched">
+                <small *ngIf="city.errors?.['required']&& (city.valid||city.touched)" class="text-danger">
+                  city is required
+                </small>
+                <small *ngIf="city.errors?.['pattern']&& (city.valid||city.touched)" class="text-danger">
+                  city length greater than 3 letter
+                </small>
+              </div>
+
+              <!-- postal code -->
+              <div>
+                <label for="postalCode" class="form-label">Postal Code :</label>
+                <input type="text" class="form-control" id="postalCode" placeholder="Enter Postal Code"
+                  [class.is-invalid]="postalCode.invalid&&postalCode.touched" formControlName="postalCode">
+                <small *ngIf="postalCode.errors?.['required']&& (postalCode.valid||postalCode.touched)"
+                  class="text-danger">
+                  postalCode is required
+                </small>
+                <small *ngIf="postalCode.errors?.['pattern']&& (postalCode.valid||postalCode.touched)"
+                  class="text-danger">
+                  postalCode length greater than 3 letter
+                </small>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- age -->
+              <div class="mb-3 col">
+                <label for="age" class="form-label">Age :</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" formControlName="age"
+                  [class.is-invalid]="age.invalid&&age.touched" max="50" min="15">
+
+                <small *ngIf="age.errors?.['required']&& (age.valid||age.touched)" class="text-danger">age is
+                  required</small>
+                <small *ngIf="(age.errors?.['min']||age.errors?.['max'])&& (age.valid||age.touched)"
+                  class="text-danger">age
+                  number must between 15 and 50</small>
+
+              </div>
+              <!-- phone -->
+              <div class="mb-3 col">
+                <label for="phone" class="form-label">Phone :</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter your phone"
+                  formControlName="phone" [class.is-invalid]="phone.invalid&&phone.touched">
+                <small *ngIf="phone.errors?.['required']&& (phone.valid||phone.touched)" class="text-danger">phone is
+                  required</small>
+                <small *ngIf="phone.errors?.['pattern']&& (phone.valid||phone.touched)" class="text-danger">phone length
+                  equal 11 number start with (011 | 010 | 012 | 013 | 015)</small>
+              </div>
+            </div>
+            <!-- gender -->
+            <div class="mb-3 ">
+              <label class="form-label">Gender :</label>
+              <div class="d-flex ps-3">
+                <div class="form-check ">
+                  <input type="radio" class="form-check-input " id="female" value="female" formControlName="gender">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+
+                <div class="form-check ms-3">
+                  <input type="radio" class="form-check-input" id="male" value="male" formControlName="gender">
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+              </div>
+              <small *ngIf="gender.errors?.['required']&& (gender.valid||gender.touched)" class="text-danger">gender is
+                required</small>
+            </div>
+            <!-- security Question -->
+            <fieldset formGroupName="securityQuestions">
+              <legend title="this question if you forget password">Security Questions</legend>
+
+
+              <div class="mb-3">
+                <label for="firstSchoolName" class="form-label">What was the name of the first School you Attend
+                  :</label>
+                <input type="text" class="form-control" id="firstSchoolName" placeholder="Enter School name"
+                  formControlName="firstSchoolName"
+                  [class.is-invalid]="firstSchoolName.invalid&&firstSchoolName.touched">
+                <small *ngIf="firstSchoolName.errors?.['required']&& (firstSchoolName.valid||firstSchoolName.touched)"
+                  class="text-danger">firstSchoolName is required</small>
+                <small *ngIf="firstSchoolName.errors?.['minlength']&& (firstSchoolName.valid||firstSchoolName.touched)"
+                  class="text-danger">firstSchoolName length greater than 2 letter</small>
+
+              </div>
+              <div class="mb-3">
+                <label for="childhoodNickname" class="form-label">What was your childhood nickname :</label>
+                <input type="text" class="form-control" id="childhoodNickname" placeholder="Enter nickname"
+                  formControlName="childhoodNickname"
+                  [class.is-invalid]="childhoodNickname.invalid&&childhoodNickname.touched">
+                <small
+                  *ngIf="childhoodNickname.errors?.['required']&& (childhoodNickname.valid||childhoodNickname.touched)"
+                  class="text-danger">childhoodNickname is required</small>
+                <small
+                  *ngIf="childhoodNickname.errors?.['minlength']&& (childhoodNickname.valid||childhoodNickname.touched)"
+                  class="text-danger">childhoodNickname length greater than 2 letter</small>
+
+              </div>
+              <div class="mb-3">
+                <label for="motherMiddleName" class="form-label">What is your mother's middle name :</label>
+                <input type="text" class="form-control" id="motherMiddleName" placeholder="Enter name"
+                  formControlName="motherMiddleName"
+                  [class.is-invalid]="motherMiddleName.invalid&&motherMiddleName.touched">
+                <small
+                  *ngIf="motherMiddleName.errors?.['required']&& (motherMiddleName.valid||motherMiddleName.touched)"
+                  class="text-danger">motherMiddleName is required</small>
+                <small
+                  *ngIf="motherMiddleName.errors?.['minlength']&& (motherMiddleName.valid||motherMiddleName.touched)"
+                  class="text-danger">motherMiddleName length greater than 2 letter</small>
+
+
+              </div>
+            </fieldset>        
+        <div class="text-center pt-1 mb-5">
+          <button (click)="addUser()" class="btn btn-success border rounded-3 px-4"
+            [disabled]="registerForm.invalid">register</button>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+
+</div>
